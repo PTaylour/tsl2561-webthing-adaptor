@@ -1,0 +1,42 @@
+{
+  "name": "tsl2561-adapter",
+  "display_name": "TSL2561",
+  "version": "0.0.0",
+  "description": "TSL2561 lux sensor adapter plugin for Mozilla WebThings Gateway",
+  "author": "ptaylour",
+  "main": "main.py",
+  "keywords": [
+    "mozilla",
+    "iot",
+    "adapter",
+    "tsl2561"
+  ],
+  "homepage": "petetaylour.world",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PTaylour/tsl2561-webthing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PTaylour/tsl2561-webthing/issues"
+  },
+  "files": [
+    "LICENSE",
+    "SHA256SUMS",
+    "lib",
+    "main.py",
+    "pkg/__init__.py",
+    "pkg/tsl2561_adapter.py",
+    "pkg/tsl2561_device.py",
+    "pkg/tsl2561_property.py",
+    "pkg/util.py"
+  ],
+  "moziot": {
+    "api": {
+      "min": 2,
+      "max": 2
+    },
+    "plugin": true,
+    "exec": "python3 {path}/main.py"
+  }
+}
